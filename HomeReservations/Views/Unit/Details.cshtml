@@ -26,6 +26,19 @@
             @Html.DisplayFor(model => model.Description)
         </dd>
 
+        <dt>
+            @Html.DisplayNameFor(model => model.Admins)
+        </dt>
+        
+        <dd>
+                @foreach (var admin in Model.Admins)
+                {
+
+                <span>@Html.DisplayFor(modelItem => admin.Email) </span>
+
+                }
+        </dd>
+
     </dl>
 </div>
 <p>
